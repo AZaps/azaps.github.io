@@ -1,0 +1,48 @@
+.navbar.navbar-custom {
+    border-radius: 0;
+}
+
+p {
+    font-size: 18px;
+    text-align: center;
+}
+
+/* Picture on the left with text on the right */
+.taskQuestLeftContainer {
+    margin-top: 40px;
+}
+.taskQuestPictureLeft {
+    float: left;
+}
+.textRight {
+    margin-left: 35%;
+    margin-top: 5%;
+    font-size: 16px;
+}
+dd {
+    text-indent: 5%;
+}
+.listType {
+    text-indent: 10%;
+}
+
+/* Picture on the right with text on the left */
+.taskQuestRightContainer {
+    margin-top: 40px;
+}
+.taskQuestPictureRight {
+    float: right;
+}
+.textLeft {
+    font-size: 16px;
+    margin-top: 5%;
+}
+
+
+
+
+
+
+
+
+
