@@ -6,3 +6,25 @@ html, body, .containerResume {
     height: 100%;
     width: 100%;
 }   
+
+h1 {
+    width: %;
+    text-align: center;
+}
+h4 {
+    float: right;
+}
+
+.containerResumeContent{
+    padding-top: 2%;
+}
+.sidebar {
+    display: inline-block;
+    padding-right: 10%;
+    font-weight: 600;
+    font-size: 16px;
+}
+.content {
+    display: inline-block;
+    font-size: 16px;
+}
