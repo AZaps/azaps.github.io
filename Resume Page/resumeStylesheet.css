@@ -12,7 +12,7 @@ h1 {
     text-align: center;
 }
 h4 {
-    float: right;
+    text-align: center
 }
 
 .containerResumeContent{
@@ -21,8 +21,8 @@ h4 {
 .sidebar {
     display: inline-block;
     padding-right: 10%;
-    font-weight: 600;
-    font-size: 16px;
+    font-weight: 900;
+    font-size: 18px;
 }
 .content {
     display: inline-block;
