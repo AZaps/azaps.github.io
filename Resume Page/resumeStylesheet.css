@@ -16,11 +16,15 @@ h4 {
 }
 .sidebar {
     display: inline-block;
-    padding-right: 10%;
     font-weight: 900;
     font-size: 18px;
+    width: 160px;
 }
 .content {
     display: inline-block;
     font-size: 16px;
+}
+
+.contentParagraph {
+    margin-left: 170px;
 }
