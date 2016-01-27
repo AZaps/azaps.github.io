@@ -1,3 +1,8 @@
 .navbar.navbar-custom {
     border-radius: 0;
+    margin-bottom: 0px;
+}
+
+.carousel {
+   margin-top: 0px;
 }
