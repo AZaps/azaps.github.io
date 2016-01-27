@@ -1,20 +1,16 @@
 .navbar.navbar-custom {
     border-radius: 0;
 }
-
 html, body, .containerResume {
     height: 100%;
     width: 100%;
 }   
-
 h1 {
-    width: %;
     text-align: center;
 }
 h4 {
     text-align: center
 }
-
 .containerResumeContent{
     padding-top: 2%;
 }
