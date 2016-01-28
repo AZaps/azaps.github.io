@@ -1,0 +1,25 @@
+.navbar.navbar-custom {
+    border-radius: 0;
+    margin-bottom: 0px;
+}
+
+.headerImage {
+    width:148%;
+    margin-left: -25%;
+    position: relative;
+}
+
+h1 {
+    color: black;
+    text-align: center;
+}
+
+    
+.container .imageOverlay {
+    position: absolute;
+    background:rgba(255,255,255,0.8);
+    height: 600px;
+    width: 100%;
+    top: 560px;
+    left: 0px;
+}
