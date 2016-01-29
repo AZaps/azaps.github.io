@@ -3,6 +3,11 @@
     margin-bottom: 0px;
 }
 
+.container.containerWrapper {
+    position: relative;
+    float: left;
+}
+
 .headerImage {
     position: absolute;
     max-width: 100%;
@@ -19,9 +24,10 @@ h1 {
     left: 0px;
     bottom: -29px
 }
- 
+
 .projectPhotos {
     position: absolute;
-    width: 35%;
+    max-width: 35%;
+    max-height: inherit;
     bottom: 0px;
 }
