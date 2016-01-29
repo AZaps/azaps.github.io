@@ -44,13 +44,37 @@
         </div>
     </nav>
     
-    <div class="container-fluid containerWrapper">
+    <!--<div class="container-fluid containerWrapper">
             <img class="headerImage" src="arduinoPicture.jpg" alt="Arduino Uno">
             <h1>Arduino Projects</h1>
             <img class="projectPhotos" style="left:5%" src="lightSensorLayout.jpg" alt="Arduino Light Sensor">
             <img class="projectPhotos" style="right:5%;" src="sdSensorLayout.jpg" alt="Arduino Light Sensor">    
-    </div>
+    </div> -->
     
+<!-- Background Arduino Image -->
+<div class='container-fluid imageWrapper'>
+	<img src='arduinoPicture.jpg' alt="Arduino Uno" style="max-width:120%; position:relative; left:-10%;"> 
+	<div class='container imageOverlay'>
+		<h1>Arduino Projects</h1>
+        
+            <!-- Left Arduino Image -->
+            <div class='container imageWrapperLeft'>
+	           <img class="projectImageLeft" src='lightSensorLayout.jpg' alt="Arduino Light Sensor Layout"> 
+	           <div class='container imageSmallOverlayLeft'>
+                   <h5 style="padding-bottom:69%;">RGB Light Sensor</h5>
+	           </div>
+            </div>
+        
+            <!-- Right Arduino Image -->
+            <div class='container imageWrapperRight'>
+	           <img class="projectImageRight" src='sdSensorLayout.jpg' alt="Arduino SD Layout"> 
+	           <div class='container imageSmallOverlayRight'>
+		          <h5 style="padding-bottom:69%;">SD Card Reader with Sensors</h5>
+                   
+	           </div>
+            </div>
+	</div>
+</div>
     
 </body>
 </html>
