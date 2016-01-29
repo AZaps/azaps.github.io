@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Arduino Projects</title>
+  <title>Arduino SD with Sensors</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Custom Stylesheet -->
-    <link href = "arduinoProjectsStylesheet.css" rel="stylesheet">
+    <link href = "arduinoSDCardStylesheet.css" rel="stylesheet">
     
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -46,30 +46,16 @@
     
     <!-- Background Arduino Image -->
     <div class='container-fluid imageWrapper'>
-	   <img src='arduinoPicture.jpg' alt="Arduino Uno" style="max-width:120%; position:relative; left:-10%;"> 
+	   <img src='arduinoSDCodeLayout.JPG' alt="Code and Layout" style="width:105%; position:relative; left:-2%;"> 
 	   <div class='container imageOverlay'>
-		  <h1>Arduino Projects</h1>
-        
-           <!-- Left Arduino Image -->
-            <a href="../Arduino%20RGB%20Light%20Sensor/arduinoRGBSensor.html">
-                <div class='container imageWrapperLeft'>
-	               <img class="projectImageLeft" src='lightSensorLayout.jpg' alt="Arduino Light Sensor Layout">
-	               <div class='container imageSmallOverlayLeft'>
-                       <h5 style="padding-bottom:69%;">RGB Light Sensor</h5>
-                    </div>
-                </div>
-           </a>
-        
-           <!-- Right Arduino Image -->
-           <a href="../Arduino%20SD%20Card%20Reader%20with%20Sensors/arduinoSDCard.html">
-                <div class='container imageWrapperRight'>
-                    <img class="projectImageRight" src='sdSensorLayout.jpg' alt="Arduino SD Layout"> 
-	               <div class='container imageSmallOverlayRight'>
-                       <h5 style="padding-bottom:69%;">SD Card Reader with Sensors</h5>
-                    </div>
-               </div>
-           </a>
-	   </div>
+           <h1>Arduino SD with Sensors</h1>
+        </div>
+    </div>
+    
+    <div class="container" style="display:inline-block; padding-top:2%;"> 
+        <p>This project is the basis for my groups' 2016 senior design project. This is a simpler version and is currently missing any sensing input. I took this upon myself to see if I could add extra functionality to our project. Due to the limited amount of memory on the Uno, the SD library functions took a lot of space and limited the amount of extra functionality that was needed. I created a custom library that holds all the SD functions to reduce the amount of limited SRAM.</p>
+        <p>The goal of this project is read any sensor data, format the data, and save it to the SD card so it can used with a C# program I am currently writing. The program is to read the data from the SD card and provide useful, visual feedback to the user in a graphical form that shows trends over a defined time period.</p>
+        <p>The code for this project is on GitHub and the C# program is still in its very early stages.</p>
     </div>
     
 </body>

@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Arduino Projects</title>
+  <title>Arduino RGB Sensor</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Custom Stylesheet -->
-    <link href = "arduinoProjectsStylesheet.css" rel="stylesheet">
+    <link href = "arduinoRGBSensorStylesheet.css" rel="stylesheet">
     
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -46,31 +46,22 @@
     
     <!-- Background Arduino Image -->
     <div class='container-fluid imageWrapper'>
-	   <img src='arduinoPicture.jpg' alt="Arduino Uno" style="max-width:120%; position:relative; left:-10%;"> 
+	   <img src='arduinoRGBCodeLayout.JPG' alt="Code and Layout" style="width:105%; position:relative; left:-2%;"> 
 	   <div class='container imageOverlay'>
-		  <h1>Arduino Projects</h1>
-        
-           <!-- Left Arduino Image -->
-            <a href="../Arduino%20RGB%20Light%20Sensor/arduinoRGBSensor.html">
-                <div class='container imageWrapperLeft'>
-	               <img class="projectImageLeft" src='lightSensorLayout.jpg' alt="Arduino Light Sensor Layout">
-	               <div class='container imageSmallOverlayLeft'>
-                       <h5 style="padding-bottom:69%;">RGB Light Sensor</h5>
-                    </div>
-                </div>
-           </a>
-        
-           <!-- Right Arduino Image -->
-           <a href="../Arduino%20SD%20Card%20Reader%20with%20Sensors/arduinoSDCard.html">
-                <div class='container imageWrapperRight'>
-                    <img class="projectImageRight" src='sdSensorLayout.jpg' alt="Arduino SD Layout"> 
-	               <div class='container imageSmallOverlayRight'>
-                       <h5 style="padding-bottom:69%;">SD Card Reader with Sensors</h5>
-                    </div>
-               </div>
-           </a>
+           <h1>Arduino RGB Sensor</h1>
 	   </div>
     </div>
+    
+    <div class="container" style="display:inline-block; padding-top:2%;"> 
+        <p>This project is one of the more entertaining ones. I have a set of RGB light strips that change color based on the connected controller. The controller only has the ability to select a single color or have it change through the spectrum on a preset loop. Well that's boring unless I wanted to use it strictly for ambient lighting. I wanted color changing based on what was coming off the TV, and to do that I needed to get a sensor that could detect the color spectrum and pass it to the controller and the light strips.</p> 
+        <p>Time to crack it open! I opened up the controller and wired three separate wires to the three controlling transistors and another wire for ground. That was essentially it for the controller, the most amount of work was with the light sensor and Arduino.</p>
+        <p>As for detecting the color from the TV, I went with a RGB sensor from Sparkfun. This was to be hooked up to the Arduino which pass the correct RGB value to the controller.</p>
+        <p>The code for the project will be available on GitHub and the light strip will be up shortly.</p>
+    </div>
+    
+    
+    
+    
     
 </body>
 </html>
