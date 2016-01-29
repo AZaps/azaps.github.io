@@ -20,3 +20,8 @@ h1 {
     bottom: -29px
 }
  
+.projectPhotos {
+    position: absolute;
+    width: 35%;
+    bottom: 0px;
+}
