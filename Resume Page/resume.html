@@ -44,68 +44,110 @@
         </div>
     </nav>
     
-    <!-- Change to a table, might help in formatting -->
-    
-    <div class="container">
-        <h1>Anthony Zaprzalka<h4>azmail@comcast.net</h4></h1>
-    </div>  
-    
-    <div class="container containerResumeContent">
-        <p class="sidebar">Objective</p>
-        <p class="content">Seeking a full time position in the electrical and electronics engineering field.</p>
-    </div>
-    
-    <div class="container containerResumeContent">
-        <p class="sidebar">Education</p>
-        <p class="content"><span style="font-weight:bold">University of Illinois at Chicago</span></p>
-        <p class="content">Bachelor of Science in Electrical Engineering expected May 2016</p>
-    </div>
-    
-    <div class="container containerResumeContent">
-        <p class="sidebar">Coursework</p>
-        <p class="content contentParagraph">Electronics II, Principles of Automatic Control, Image Analysis and Computer Vision, Multimedia Systems, Microprocessor-Based Design, Solid State Device Theory, Circuit Analysis, Discrete and Continuous Signal Systems</p>
-    </div>
-    
-    <div class="container containerResumeContent">
-        <p class="sidebar">Personal Projects</p>
-        <p class="content"><b>App Development</b></p><br>
-        <p class="content contentParagraph"><b><i>Swift (Object-Oriented)</i></b> on Github <a href="https://github.com/AZaps/Task-Quest-Swift.git">Task Quest Github Page</a></p>
-        <p class="content">
-            <ul class="content contentParagraph">
-                <li>Designed and created Task Quest (IP), a Role-Playing game style reminder app</li>
-                <li>Uses Core Data, follows MVC, and animation usage</li>
-            </ul>
-        </p>
-    <p class="content contentParagraph"><b>Hardware and Software</b></p>
-        <p class="content"><b><i>Arduino</i></b></p>
-        <p class="content">
-            <ul class="content contentParagraph">
-                <li>Modified a RGB controller to work with an Arduino controller</li>
-                <li>Using C to control the LED’s and create dynamic background lighting</li>
-            </ul>
-        </p>
-    </div>
-
-    <!--<div class="container containerResumeContent">
-        <p class="sidebar">Experience</p>
-        <p class="content"></p>
-    </div> -->
-    
-    <div class="container containerResumeContent">
-        <p class="sidebar">Activities</p>
-        <p class="content">National Honor Society</p>
-        <p class="content">IEEE Student Member</p>
-    </div>
-
-    <div class="container containerResumeContent">
-        <p class="sidebar">Skills</p>
-        <p class="content contentParagraph">Swift, C#, C, Assembly, BASIC, MATLAB and Arduino micro controllers. Multisim and LTSpice circuit simulators. Oscilloscopes, multimeters, waveform generators, and voltage generators. Digital electronic circuitry design and construction. Working knowledge in Autodesk Inventor, Microsoft Office, Apple iWork, and German (5 years experience).</p>
-    </div>
-
-    <div class="container containerResumeContent">
-        <p class="sidebar">Interests</p>
-        <p class="content contentParagraph">Working and coding with iOS devices, repairing computers, building and creating things, astronomy, scientific theories and developments, NHRA, biking, discovering new music, gaming, and learning new concepts.</p>
-    </div>
-    
+    <div class="container-fluid customContainer">
+        <h1>Anthony Zaprzalka</h1>
+        <h4>azmail@comcast.net</h4>
+        <!-- Table for bulk of resume -->
+        <table class="table borderless">
+            <tbody>
+                <!-- Summary -->
+                <tr>
+                    <td class="sidebar">Summary</td>
+                    <td>Proficient in electrical and computer theory to construct and implement hardware and software designs. Self-taught and designed an iOS app and a personal website. Seeking a full time position in the electrical engineering field.</td>
+                </tr>
+                <!-- Education -->
+                <tr>
+                    <td class="sidebar">Education</td>
+                    <td><span style="font-weight:500;">University of Illinois at Chicago</span>
+                        <br>Bachelor of Science in Electrical Engineering expected May 2016</td>
+                </tr>
+                <!-- Coursework -->
+                <tr>
+                    <td class="sidebar">Coursework</td>
+                    <td>Electronics II, Principles of Automatic Control, Solid State Device Theory, Image Analysis and Computer Vision, Circuit Analysis, Discrete and Continuous Signal Systems</td>
+                </tr>
+                <!-- Skills -->
+                <tr>
+                    <td class="sidebar">Skills</td>
+                    <td>Swift, C, C#, Assembly, MATLAB and Arduino. Multisim and LTSpice circuit simulators. Oscilloscopes, multimeters, voltage and waveform generators. Circuit design and construction. Working knowledge in Autodesk Inventor, Microsoft Office, Apple iWork, and German.</td>
+                </tr>
+                <!-- Personal Projects -->
+                <tr>
+                    <td class="sidebar">Personal Projects</td>
+                    <!-- Website Development -->
+                    <td>
+                        <span class="listHeaders">Website Development</span>
+                        <br><span style="font-style:italic;">HTML, CSS, Bootstrap</span>
+                        <ul>
+                            <li>Self-taught and designed</li>
+                            <li>Created for presenting personal projects and providing links to source code</li>
+                            </ul>
+                    <!-- App Development -->
+                        <span class="listHeaders">App Development</span>
+                        <br><span style="font-style:italic;">Swift (Object-Oriented)</span>
+                        <ul>
+                            <li>Designed and created Task Quest (Alpha), a Role-Playing game style reminder app</li>
+                            <li>Uses Core Data, follows a MVC pattern, and animation usage</li>
+                            </ul>
+                    <!-- Hardware and Software -->
+                        <span class="listHeaders">Hardware and Software</span>
+                        <br><span style="font-style:italic;">Arduino (C)</span>
+                        <ul>
+                            <li>Modified a RGB controller to work with an Arduino controller</li>
+                            <li>Saving sensor data to a SD card to function with a Windows companion application</li>
+                        </ul>
+                    </td>
+                </tr>
+                <!-- Senior Design Project -->
+                <tr>
+                    <td class="sidebar">Senior Design Project</td>
+                    <td>
+                        <span class="listHeaders">Household Air Quality Sensor</span>
+                        <span class="listDates">August 2015 - April 2016</span>
+                        <ul>
+                            <li>Implements multiple gas sensors that most homes do not account for, provides extra safety</li>
+                            <li>Uses an Arduino to quickly and efficiently provide user with important information</li>
+                            <li>Ability to monitor and log daily information of house conditions</li>
+                        </ul>
+                    </td>
+                </tr>
+                <!-- Experience -->
+                <tr>
+                    <td class="sidebar">Experience</td>
+                    <td>
+                        <span class="listHeaders">Palatine Public Works, </span>
+                        <span style="font-style:italic;">Palatine,Illinois</span>
+                        <span class="listDates">May - August 2014</span>
+                        <br><span style="font-style:italic;">Summer Laborer</span>
+                            <ul>
+                                <li>Worked with a team to quickly remove and restore trees</li>
+                                <li>Communicated with homeowners about current status</li>
+                            </ul>
+                        <span class="listHeaders">Palatine Township Food Pantry, </span>
+                        <span style="font-style:italic;">Palatine, Illinois</span>
+                        <span class="listDates">January 2009 - April 2012</span>
+                        <br><span style="font-style:italic;">Volunteer</span>
+                            <ul>
+                                <li>Assisted customers with the correct selection of items</li>
+                                <li>Maintained a clean and organized workspace</li>
+                            </ul>
+                    </td>
+                </tr>
+                <!-- Activities -->
+                <tr>
+                    <td class="sidebar">Activities</td>
+                    <td>
+                        National Honor Society
+                        <br>IEEE Student Member
+                    </td>
+                </tr>
+                <!-- Interests -->
+                <tr>
+                    <td class="sidebar">Interests</td>
+                    <td>Working and coding with iOS devices, repairing computers, building and creating things, astronomy, scientific theories and developments, NHRA, biking, discovering new music, gaming, and learning new concepts.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>    
 </body>
 </html>
