@@ -7,20 +7,18 @@
 	float: left; 
 	position: relative;
     left: 0px;
+    width: 100%;
     overflow: hidden;
 }
 .container.imageOverlay{
 	position: absolute; 
-	top: 70%;
+	top: 60%;
     bottom: 0px; 
 	left: 0px;
 	width: 100%;
 	color: black;
 	background-color: rgba(255,255,255,0.6);
     text-align: center;
-}
-h1 {
-    padding: 5px;
 }
 
 footer {
@@ -29,6 +27,9 @@ footer {
     padding-bottom: 1%;
     color: white;
     margin-top: 10%;
+    position: relative;
+    bottom: 0px;
+    width: 100%;
 }
 
 .footerLinks {
