@@ -29,3 +29,18 @@ h4 {
     padding: 1%;
     
 }
+
+footer {
+    background: black;
+    padding-top: 2%;
+    padding-bottom: 1%;
+    color: white;
+}
+
+.footerLinks {
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
+}

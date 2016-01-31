@@ -1,45 +1,57 @@
-body {
-    background: black;
+html body {
+    background: #A1887F;
+    color: ghostwhite;
 }
 .navbar.navbar-custom {
     border-radius: 0;
     margin-bottom: 0px;
 }
 
-p {
-    font-size: 18px;
+#headerIntroParagraph {
     text-align: center;
+    font-size: 18px;
 }
 
-/* Picture on the left with text on the right */
-.taskQuestLeftContainer {
-    margin-top: 40px;
+.descriptionContainer {
+    padding-bottom: 5%;
 }
-.taskQuestPictureLeft {
-    float: left;
+
+.imageLeft {
+    width: 50%;
 }
+
 .textRight {
-    margin-left: 35%;
-    margin-top: 5%;
     font-size: 16px;
-}
-dd {
-    text-indent: 5%;
-}
-.listType {
-    text-indent: 10%;
 }
 
-/* Picture on the right with text on the left */
-.taskQuestRightContainer {
-    margin-top: 40px;
-}
-.taskQuestPictureRight {
-    float: right;
-}
-.textLeft {
+ul {
+    list-style-type: none;
     font-size: 16px;
-    margin-top: 5%;
+}
+.paddedList{
+    padding-bottom: 2%;
+}
+
+.table tbody>tr>td {
+    vertical-align: top;
+}
+.table tbody>tr>td.vert-align {
+    vertical-align: middle;
+}
+
+footer {
+    background: black;
+    padding-top: 2%;
+    padding-bottom: 1%;
+    color: white;
+
+}
+.footerLinks {
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 

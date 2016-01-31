@@ -43,69 +43,93 @@
             </div>
         </div>
     </nav>
-  
-    <div class="container">
-        <h1><center>Task Quest</center></h1>
-        <p>Task Quest is a role-playing game style reminder's app. I felt typical reminder apps are very dull and don't provide an incentive to get things done. Task Quest fixes that problem by giving the Hero, You!, experience points once you complete a Quest. By completing each quest those experience points go towards your hero where you can upgrade their skill set and even give them armor pieces to get bonuses! </p>
-    </div>
-    <div class="container taskQuestLeftContainer">
-        <img class="taskQuestPictureLeft" src="taskQuestAddQuest.jpg" alt="Task Quest Add Quest" style="width: 30%">
-        <ul class="textRight">
-            <dt>A hero needs Quests to do!</dt>
-                <dd>Following RPG style quest giving, Task Quest asks for:</dd>
-                    <dd class="listType">1. A quest name</dd>
-                    <dd class="listType">2. Who gave the current quest</dd>
-                    <dd class="listType">3. Extra notes critical to the quest</dd>
-                    <dd class="listType">4. Finally, a deadline to be set to complete the task.</dd>
-            <p></p>
-            <dt>Create as many quests as you need to do, the more the better.</dt>
-        </ul>
-    </div>
     
-    <div class="container taskQuestRightContainer">
-        <img class="taskQuestPictureRight" src="taskQuestActiveQuestList.jpg" alt="Task Quest Active Quest List" style="width: 30%">
-        <ul class="textLeft">
-            <dt>Check all your currently active Quests</dt>
-            <p></p>
-            <dt>Choose how you want to view them. Sort by:</dt>
-                <dd>1. Time until completion</dd>
-                <dd>2. Alphabetical</dd>
-                <dd>3. First added or last added</dd>
-            <p></p>
-            <dt>Remove a quest at the table view</dt>
-        </ul>
+    <div class="container" style="padding-bottom:5%;">
+        <!-- Header -->
+        <div class="container">
+            <center>
+                <h1>Task Quest</h1>
+                <img src="Task%20Quest%20Icon%20v3.png" alt="Task Quest App Icon" style="max-width:25%;">
+            </center>
+        </div>
+        <!-- Intro Paragraph -->
+        <div class="container" style="padding-top:3%; padding-bottom:3%;">
+            <p id="headerIntroParagraph">Task Quest is a role-playing game style reminder's app. I felt typical reminder apps are very dull and don't provide an incentive to get things done. Task Quest fixes that problem by giving the Hero, You!, experience points once you complete a quest. By completing each quest those experience points go towards your hero where you can upgrade their skill set and even give them armor pieces to get bonuses! </p>
+        </div>
+        
+        <div class="container">
+            <table class="table" style="table-layout:fixed;">
+                <tbody>
+                    <!-- Task Quest Main Screen -->
+                    <tr>
+                        <td class="vert-align"><img src="taskQuestMain.png" alt="Task Quest Main Screen" class="imageLeft"> </td>
+                        <td class="vert-align">
+                            <p class="textRight">Task Quest shows all your active quests right away so you can see how much or how little you have left. The more you do the better your hero becomes!</p>
+                            <br>
+                            <p class="textRight">From the main screen you also have access to</p>
+                                <ul>
+                                    <li class="paddedList">Your recently completed Quests.</li>
+                                    <li class="paddedList">Add a new quest.</li>
+                                    <li class="paddedList">View your hero.</li>
+                                    <li class="paddedList">Various settings options.</li>
+                                </ul>
+                            
+                        </td>
+                    </tr>
+                    <!-- Task Quest Add a New Quest -->    
+                    <tr>
+                        <td class="vert-align">
+                            <img src="taskQuestAddNew.png" alt="Task Quest Add New Quest" class="imageLeft" style="padding-bottom:5%;">
+                            <img src="sampleTask.png" alt="Sample Full Quest" class="imageLeft" style="padding-top:5%;">
+                            
+                        </td>
+                        <td class="vert-align">
+                            <p class="textRight">Creating a new Quest in Task Quest is as simple as tapping the + button in the upper corner.</p>
+                            <p class="textRight">The quest input screen will pop up prompting you to enter your next quest. Sticking with traditional RPG elements you can add</p>
+                            <ul>
+                                <li class="paddedList">Your quest title. What needs to be done?</li>
+                                <li class="paddedList">Who assigned this quest to you?</li>
+                                <li class="paddedList">There is a possibility that there is more to the quest than just the title! Add some extra notes to aid in its completion.</li>
+                                <li class="paddedList">Enter when the quest needs to be completed by.</li>
+                                <li>Things change! So any part of your quest can be changed.</li>
+                            </ul>
+                            
+                        </td>
+                    </tr>
+                    <!-- Task Quest viewing newly added quest -->
+                    <tr>
+                        <td class="vert-align"><img src="sampleFullTask.png" alt="Task Quest Main Screen" class="imageLeft"> </td>
+                        <td class="vert-align">
+                            <p class="textRight">Here is your newly inputted quest. It shows everything that your just inputted with a remaining time to complete your quest.</p>
+                            <p class="textRight">Here you can also edit any part of the quest if something happens to change.</p>
+                            <p class="textRight">Once you have completed your quest tap the Complete Quest button to get your experience! Unless some other hero had the same task and finished it before you, it can be removed from your active quests.</p>
+                        </td>
+                    </tr>
+                    <!-- Getting EXPERIENCE! -->
+                    <tr>
+                        <td class="vert-align"><img src="questComplete.png" alt="Task Quest Main Screen" class="imageLeft"> </td>
+                        <td class="vert-align">
+                            <center><p class="textRight">QUEST COMPLETED!</p></center>
+                            <p class="textRight">Your hard work will not go unrecognized, your hero will gain experience and if they have gained enough...they will level up!</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
     </div>
-    
-    <div class="container taskQuestLeftContainer">
-        <img class="taskQuestPictureLeft" src="taskQuestSelectedQuest.jpg" alt="Task Quest Selected Quest" style="width:30%">
-        <ul class="textRight">
-            <dt>Every quest can be edited. It's a living world, things can change!</dt>
-                <dd>The quest might have changed slightly... <span style="font-weight:bold">Change the title!</span></dd>
-                <dd>The quest might need to be completed by someone else... <span style="font-weight:bold">Change who gave it to you!</span></dd>
-                <dd>You might have extra time to complete the quest... <span style="font-weight:bold">Change the completion time!</span></dd>
-                <dd>There might be extra steps involved now... <span style="font-weight:bold">Add it to the notes!</span></dd>
-            <p></p>
-            <dt>The Quest might not even need to be completed anymore, so it can also be deleted from here or from the table view.</dt>
-            <p></p>
-            <dt>If the Quest has been completed, tap Complete Quest to get your well deserved XP!</dt>
-        </ul>
-    </div>
-    
-    <div class="container taskQuestRightContainer">
-        <img class="taskQuestPictureRight" src="taskQuestCompletedList.jpg" alt="Task Quest Completed List" style="width:30%">
-        <ul class="textLeft">
-            <dt>Once you have completed your Quests, they will appear here where you can see all of the hard work you have done.</dt>
-        </ul>
-    </div>
-    
-    <div class="container">
-        <img src="questComplete.png" alt="Sample Full Task" style="width:30%;">
-        <img src="sampleFullTask.png" alt="Sample Full Task" style="width:30%;">
-        <img src="sampleTask.png" alt="Sample Full Task" style="width:30%;">
-        <img src="taskQuestAddNew.png" alt="Sample Full Task" style="width:30%;">
-        <img src="taskQuestMain.png" alt="Sample Full Task" style="width:30%;">
-    </div>
-    
+        
+
+    <footer>
+        <p><span style="padding-left:5%;">Anthony Zaprzalka | 2016</span>
+            <span style="float:right; padding-right:5%;">
+                <a class="footerLinks" href="https://www.linkedin.com/in/anthonyzaprzalka" target="_blank">LinkedIn</a>
+                <a class="footerLinks" href="https://github.com/AZaps" target="_blank">GitHub</a>
+            </span>
+        </p>
+    </footer>
+
+
 </body>
 </html>
 
