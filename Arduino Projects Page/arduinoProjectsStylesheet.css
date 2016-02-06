@@ -28,13 +28,13 @@ h1 {
 }
 
 .container.imageWrapperLeft{
-    max-width: 45%;
+    width: 45%;
     float: left;
     position: relative;
     
 }
 .container.imageWrapperRight{
-    max-width: 45%;
+    width: 45%;
     float: right;
     position: relative;
 }
@@ -61,6 +61,7 @@ h1 {
     text-align: right;
     padding-right: 5%;
 }
+
 .container.imageSmallOverlayRight{
     position: absolute;
     top:0%;
@@ -74,16 +75,17 @@ h1 {
     padding-right: 5%;
 }
 
-footer {
-    width: 100%;
+.footer {
     background: black;
     color: white;
+    position: absolute;
+    left: 0px;
+    bottom: -100%;
+    width: 100%;
     padding-top: 2%;
     padding-bottom: 1%;
-    position: relative;
-    bottom: 0px;
-    clear: both;
 }
+
 .footerLinks {
     color: white;
 }
