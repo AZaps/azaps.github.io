@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>RGB Controller V2</title>
+        <meta name="description" content="Second Iteration of RGB Controller">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+            <!-- Main stylesheet -->
+            <link href="../../mainStylesheet.css" rel="stylesheet">
+            <!-- Page specific stlesheet -->
+            <link href="rgbLightControllerV2Stylesheet.css" rel="stylesheet">
+            
+            <!-- Latest compiled and minified CSS -->
+            <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+            <!-- jQuery library -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+            <!-- Latest compiled JavaScript -->
+            <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="container-fluid wrapper">
+            <nav class="navbar navbar-inverse navbar-custom">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../../index.html">ZApp Development</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="../../index.html">Home</a>
+                        </li>
+                        <li class="dropdown active">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Projects<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="../../swiftProjects/Scribe/swiftScribe.html">Swift Development</a>
+                                    </li>
+                                    <li class="active">
+                                        <a href="../arduinoProjects.html">Arduino Projects</a>
+                                    </li>
+                                    <li>
+                                        <a href="../../cSharpProjects/seniorDesignGraphingApplication/graphingApplication.html">C# Development</a>
+                                    </li>
+                                </ul>
+                        </li>
+                        <li>
+                            <a href="../../Resume/resume.html">Resume</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            
+            <div class="container-fluid wrapper">
+                <div class="container">
+                    <h1>RGB Controller V2</h1>
+                </div>
+                <div class="container" style="padding-bottom:40px;">
+                    <p>This is an upgrade from my previous RGB controller <a href="../RGBLightController/rgbController.html" style="font-weight:bold;">here</a>. The previous controller was limited to a single color output at a time whereas this one has individually addressable LED’s which allows for a greater range of applications.</p>
+                    <p>This one also has far less needed hardware modifications and is focused more on the software. This project models the commercial Ambilight but for the DIY’s, this is an Adalight clone.</p>
+                    <p>This project requires Processing 2 and the Arduino IDE (or if you have some other program to flash code to your Arduino).</p>
+                    <p>The link to the Processing and Arduino code can be found on the <a href="https://learn.adafruit.com/adalight-diy-ambient-tv-lighting/download-and-install" target="_blank">Adafruit</a> website. The light strip I am using can be found on <a href="https://www.amazon.com/240pixels-programmable-Individually-addressable-Waterproof/dp/B00K7UHPEC" target="_blank">Amazon</a> for around $35.</p>
+                    <p>Running the program standard I was achieving a refresh rate from the lights to be around 9 to 10 frames per second. This is pretty low but I am also using a 1440p screen so results may be different if using a 1080p screen resolution. But, by maxing out the baud rate to a reliable 250000 instead of 115200 I was able to increase the average FPS to around 14 to 15. This is a 60% increase. It may still seem slow but when used with movies and games it is rarely noticeable.</p>
+                </div>
+                
+                <div class="container">
+                    <p>Here are two clips to demonstrate the use of the setup. Both are sped up around 4x normal speed. The first is a test sequence using a YouTube video to visualize the color range and determine the delay of the refresh rate.</p>
+                </div>
+                <div class="container" style="padding-bottom:40px;">
+                    <div style='position:relative;padding-bottom:57%'><iframe src='https://gfycat.com/ifr/NauticalGiddyCheetah' frameborder='0' scrolling='no' width='100%' height='100%' style='position:absolute;top:0;left:0;' allowfullscreen></iframe></div>
+                </div>
+                
+                <div class="container">
+                    <p>This is a short clip from Elite Dangerous of me dropping into a system. You can see the light flashes during warping and the orange glow from the star that comes into view.</p>
+                </div>
+                <div class="container">
+                    <div style='position:relative;padding-bottom:57%'><iframe src='https://gfycat.com/ifr/EuphoricWeightyDikdik' frameborder='0' scrolling='no' width='100%' height='100%' style='position:absolute;top:0;left:0;' allowfullscreen></iframe></div>
+                </div>
+            </div>
+            
+            <footer class="footer">
+                <p style="float:left; padding-left: 5%;">
+                    Anthony Zaprzalka | 2016
+                </p>
+                
+                <p style="float:right; padding-right: 5%;">
+                    <a class="footerLinks" href="https://www.linkedin.com/in/anthonyzaprzalka" target="_blank">LinkedIn</a>
+                    <a class="footerLinks" href="https://github.com/AZaps" target="_blank">GitHub</a>
+                </p>
+            </footer>
+        </div>
+    </body>
+</html>

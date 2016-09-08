@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Senior Design Project</title>
+        <meta name="description" content="Senior Design Project">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+            <!-- Main stylesheet -->
+            <link href="../../mainStylesheet.css" rel="stylesheet">
+            <!-- Page specific stlesheet -->
+            <link href="seniorDesignStylesheet.css" rel="stylesheet">
+            
+            <!-- Latest compiled and minified CSS -->
+            <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+            <!-- jQuery library -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+            <!-- Latest compiled JavaScript -->
+            <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="container-fluid wrapper">
+            <nav class="navbar navbar-inverse navbar-custom">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../../index.html">ZApp Development</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="../../index.html">Home</a>
+                        </li>
+                        <li class="dropdown active">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Projects<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="../../swiftProjects/Scribe/swiftScribe.html">Swift Development</a>
+                                    </li>
+                                    <li class="active">
+                                        <a href="../arduinoProjects.html">Arduino Projects</a>
+                                    </li>
+                                    <li>
+                                        <a href="../../cSharpProjects/seniorDesignGraphingApplication/graphingApplication.html">C# Development</a>
+                                    </li>
+                                </ul>
+                        </li>
+                        <li>
+                            <a href="../../Resume/resume.html">Resume</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            
+            <div class="container" style="padding-bottom:10em;">
+                <div class="container mainHeader">
+                    <h1>Household Air Quality Sensor</h1>
+                    <h5>Senior Design Project</h5>
+                </div>
+                
+                <div class="container">
+                    <h2>Project</h2>
+                        <p>Our group of four wanted to design a better gas concentration sensor that can be used in homes or offices. We noticed most homes only have sensors to detect smoke and carbon monoxide, which is necessary but still miss some key gasses that can still be harmful. Most homes still use natural gas to provide heat on the stove and oven. Concentrations of this gas are not detected but can be smelled if in excess but at that point it might already be too late. This is how our design came to be, the <span style="font-weight:bold;">Household Air Quality Sensor</span>.</p>
+                        <p>Our group picture and abstract of the project can be viewed at the <a href="http://engineering.uic.edu/bin/view/COE/NewsExpo" target="_blank">UIC Engineering</a> website. We are the group listed under Electronic Devices II and pictures of the entire event can be seen on that website.</p>
+                </div>
+                
+                <div class="container">
+                    <h3>The Build</h3>
+                        <p>Our task for creating this project was it had to be cheap and have the ability to expand if it was ever to go into commercial production.</p>
+                        <p>In general, we wanted our product to be more interactive than a traditional gas detection unit. In doing so we went with a simple touch screen and self-designed, simple UI. Using this approach, it allows the user to see up to date information about the air quality in the current room and can also be scrolled through in order to see other concentrations. Also, with this approach one can get an early warning since the device gives current concentrations so action can be taken immediately instead of waiting for an alarm to sound as by that time it may be too late.</p>
+                </div>
+                
+                <div class="container">
+                    <p class="buildSubtitle">Hardware</p>
+                        <img style="float:right; width:40%;" src="../../_images/seniorDesignPictures/seniorDesignProjectSide.jpg" alt="Inside View of the Project">
+                        <p>Over the course of the project we had a few ideas on how we wanted the product to look and how to respond to interactions. We also strove for simplicity, expandability, and ease of use.</p>
+                        <p class="hardwareSubtitle">The Outside Look</p>
+                        <p>For our initial design we had a simple LCD screen to display information, two buttons to scroll through a list of values displayed on the screen and three LED’s (green, yellow, and red) to visually display alerts when not actively looking at the device. This was a good start and already an improvement over existing devices but we took it a little further and added a single piece of hardware that is used every day by most people that replaced mostly everything, a touchscreen.</p>
+                        <p>With the addition of the touchscreen it simplified everything and added a great deal of further interaction with the device. Touchscreens are inherently easy to use and understand so immediately our target audience was expanded. All functionality was moved to the touchscreen and a simple UI was designed so useful information could be seen at a glance (temperature, time, humidity, and a single gas). It was also larger and brighter so we could remove the LED’s and just change the color of the screen for alerts.</p>
+                        <p class="hardwareSubtitle">Internals</p>
+                        <p>Designing for expansion was a goal from the beginning. We wanted the device to have numerous capabilities from the start. As a baseline for our prototype we went with a temperature and humidity sensor, three gas sensors from Grove (MQ brand), and an Arduino Mega. Each of the gas sensors also measured multiple values so they had more than just a single use. We also added the ability to log data to an SD card which can be removed and trend data can be viewed on your computer with two companion applications we designed.</p>
+                        <p>As with this prototype it is a bit of a mess with all the wires but any future tasks would be shrinking the loose connections and having all the components on a single board and possibly a custom chip instead of a large microcontroller. We were also given other ideas to expand our design such as water and radon testing but these ideas were out of our knowledge range and given the time limit we were unable to do any research into those topics. But at the core of the project we wanted the ability to expand so any external devices should be pluggable through USB or some other universal connector as to do other monitoring easily.</p>
+                </div>
+                
+                <br>
+                
+                <div class="container">
+                    <p class="buildSubtitle">Software</p>
+                    <p>The base software to run the prototype was all done in the Arduino C based language and the code for the project can be viewed on my Github page. We went with Arduino as it has a very large community and lots of pre-built libraries for complicated pieces like the display and the sensors. Those libraries were provided from Adafruit and Seeed Studio for the touch screen and gas sensors respectively. Going this route, we didn’t need to spend a lot of time writing our own libraries and were able to focus on the core of the project by making sure everything worked together, was fast and efficient, and the touch interface easy to use and interact with.</p>
+                    <p>I designed one of the companion applications and it has its own page <a href="../../cSharpProjects/seniorDesignGraphingApplication/graphingApplication.html">here</a>. It takes the data from the SD card and graphs it in an easy to read manner so trends can be seen. Since the device also measures temperature, using the graphing application allows the user to adjust their heating and cooling behaviors in order to save money!</p>
+                </div>
+
+                <div class="container">
+                    <h2>2016 Senior Design Expo</h2>
+                    <p>At the expo we were able to present our project and the software applications that went along with at. We won our category and also won the Khounsary Award for Social and/or Environmental Advancement. It was a relief that everything went extremely well and that we came out on top especially when the competition had some really great projects.</p>
+                    <p>The two pictures below show our presentation board and also our setup at the expo.</p>
+                    <div class="container expoPictures">
+                        <img style="float:left;" src="../../_images/seniorDesignPictures/seniorDesignBoard.jpg" alt="Presentation Board">
+                        <img style="float:right;" src="../../_images/seniorDesignPictures/seniorDesignExpo.jpg" alt="Full Table Setup at Expo">
+                    </div>
+                </div>
+                
+            </div>
+            
+            <footer class="footer">
+                <p style="float:left; padding-left: 5%;">
+                    Anthony Zaprzalka | 2016
+                </p>
+                
+                <p style="float:right; padding-right: 5%;">
+                    <a class="footerLinks" href="https://www.linkedin.com/in/anthonyzaprzalka" target="_blank">LinkedIn</a>
+                    <a class="footerLinks" href="https://github.com/AZaps" target="_blank">GitHub</a>
+                </p>
+            </footer>
+        </div>
+    </body>
+</html>

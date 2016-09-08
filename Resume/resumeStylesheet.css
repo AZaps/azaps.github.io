@@ -1,0 +1,28 @@
+h1 {
+    text-align: center;
+}
+h4 {
+    text-align: center
+}
+
+.container-fluid.customContainer {
+    padding-bottom: 100px;
+}
+
+.sidebar {
+    font-weight: bold;
+}
+
+.listHeaders {
+    font-weight: 500;
+}
+
+.listDates {
+    float: right;
+    font-style: italic;
+}
+
+.table.borderless tbody tr td {
+    border: none;
+    padding: 1%;
+}

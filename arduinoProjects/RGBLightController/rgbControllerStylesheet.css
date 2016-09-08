@@ -1,0 +1,14 @@
+h1 {
+    text-align: center;
+}
+
+.container.content-wrapper {
+    padding-bottom: 100px;
+}
+.container.what-You-Need {
+    text-indent: 2em;
+}
+code {
+    display: table;
+    margin: 0 auto;
+}

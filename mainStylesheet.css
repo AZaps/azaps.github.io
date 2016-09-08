@@ -1,0 +1,62 @@
+.container-fluid {
+    background-color: #e6e6e6; !important
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+html, body {
+    height: 100%;
+    margin: 0px;
+}
+
+.container-fluid {
+    width: 100%;
+    padding: 0px;
+}
+
+.container-fluid.wrapper {
+    width: 100%;
+    min-height: 100%;
+    position: relative;
+    padding: 0px; 
+}
+
+.navbar.navbar-custom {
+    border-radius: 0;
+    margin-bottom: 0px;
+    width: 100%;
+}
+
+.carousel {
+    margin-top: 0px;
+}
+
+.imageCarousel {
+    width: 120%;
+}
+
+.carousel .carousel-control { 
+    visibility: hidden; 
+}
+
+.carousel:hover .carousel-control { 
+    visibility: visible;
+}
+
+.footer {
+    background: black;
+    color: white;
+    padding-top: 2em;
+    padding-bottom: 1em;  
+    width: 100%;
+    bottom: 0px;
+    left: 0px;
+    position: absolute;
+    clear: both;
+}
+
+.footerLinks {
+    color: white;
+}

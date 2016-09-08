@@ -1,0 +1,17 @@
+.container.mainHeader {
+    text-align: center;
+}
+
+.buildSubtitle {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.hardwareSubtitle {
+    font-weight: bold;
+}
+
+.expoPictures img {
+    width: 45%;
+    display: inline;
+}
