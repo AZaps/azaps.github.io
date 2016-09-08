@@ -1,107 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>ZApp Development</title>
-    <meta name="description" content="Home page of my website"> 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- Custom Stylesheet -->
-        <link href = "customStylesheet.css" rel="stylesheet">
-    
-        <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-        <!-- jQuery library -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-        <!-- Latest compiled JavaScript -->
-        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    
-</head>
-<body>
-    
-    <nav class="navbar navbar-inverse navbar-custom">
-        <div class="container-fluid">
-            <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>                        
-            </button>
-            <a class="navbar-brand" href="index.html">ZApp Development</a>
-            </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav navbar-right">
-                <li class="active"><a href="index.html">Home</a></li>
-                <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Projects<span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="../Swift%20Project%20Page/swiftProjects.html">Swift App Development</a></li>
-                        <li><a href="../Arduino%20Projects%20Page/arduinoProjects.html">Arduino Projects</a></li>
-                        <li><a href="#">C#</a></li>
-                    </ul>
-                </li>
-                <li><a href="../Resume%20Page/resume.html">Resume</a></li>
-                <li><a href="#">Special Thanks</a></li>
-            </ul>
-            </div>
-        </div>
-    </nav>
-  
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="2" class="active"></li>
-        </ol>
-        <div class="carousel-inner" role="listbox">
-            <div class="item active">
-                <img class="imageCarousel" src="Home%20Page%20Pictures/taskQuestHomePhoto.jpg" alt="Task Quest Snapshot">
-                <div class="carousel-caption">
-                    <h3>Task Quest</h3>
+    <head>
+        <title>ZApp Development</title>
+        <meta name="description" content="Home Page">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+            <!-- Main stylesheet -->
+            <link href="mainStylesheet.css" rel="stylesheet">
+            
+            <!-- Latest compiled and minified CSS -->
+            <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+            <!-- jQuery library -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+            <!-- Latest compiled JavaScript -->
+            <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="container-fluid wrapper">
+            <nav class="navbar navbar-inverse navbar-custom">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">ZApp Development</a>
                 </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="active">
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Projects<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="swiftProjects/Scribe/swiftScribe.html">Swift Development</a>
+                                    </li>
+                                    <li>
+                                        <a href="arduinoProjects/arduinoProjects.html">Arduino Projects</a>
+                                    </li>
+                                    <li>
+                                        <a href="cSharpProjects/seniorDesignGraphingApplication/graphingApplication.html">C# Development</a>
+                                    </li>
+                                </ul>
+                        </li>
+                        <li>
+                            <a href="Resume/resume.html">Resume</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="2" class="active"></li>
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <img class="imageCarousel" src="_images/temp/taskQuestHomePhoto.jpg" alt="Scribe Photo">
+                        <div class="carousel-caption">
+                            <h3>Scribe</h3>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img class="imageCarousel" src="_images/arduinoPictures/HAQS/SeniorDesignHomePage.png" alt="Arduino Picture">
+                            <div class="carousel-caption">
+                                <h3>Senior Design Project</h3>
+                            </div>
+                    </div>
+                    <div class="item">
+                        <img class="imageCarousel" src="_images/temp/arduinoRGBHome.jpg" alt="Arduino RGB Controller">
+                            <div class="carousel-caption">
+                                <h3>Arduino RGB Controller</h3>
+                            </div>
+                    </div>
+                </div>
+                    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
             </div>
             
-            <div class="item">
-                <img class="imageCarousel" src="Home%20Page%20Pictures/arduinoRGBHome.jpg" alt="Arduino RGB Snapshot">
-                    <div class="carousel-caption">
-                        <h3>RGB Light Controllerr</h3>
-                    </div>
+            <div class="container" style="padding-bottom:10em;">
+                <center><h1>Hello!</h1></center>
+                    <p>Here you will find what I have been working on and maybe become a little interested yourself in the projects. I do hope what I have worked on can inspire or help someone else.</p>
             </div>
             
-            <div class="item">
-                <img class="imageCarousel" src="Home%20Page%20Pictures/arduinoSDHome.jpg" alt="Analog Sensing with SD Card">
-                    <div class="carousel-caption">
-                        <h3>Analog Sensing with SD Card</h3>
-                    </div>
-            </div>
+            <footer class="footer">
+                <p style="float:left; padding-left: 5%;">
+                    Anthony Zaprzalka | 2016
+                </p>
+                
+                <p style="float:right; padding-right: 5%;">
+                    <a class="footerLinks" href="https://www.linkedin.com/in/anthonyzaprzalka" target="_blank">LinkedIn</a>
+                    <a class="footerLinks" href="https://github.com/AZaps" target="_blank">GitHub</a>
+                </p>
+            </footer>
         </div>
-        
-        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true
-                                                                        "></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
-        
-    </div>
-    
-    <div class="container">
-        <center><h3>Hello and welcome.</h3>
-            <p>This website is currently under construction and maintenance. I plan to have code and photos put up of the Arduino projects soon. The current app in progress is my first app and still in the early stages of development. The code is currently up on Github as will the other projects. I have a C# project currently in the works that ties in with a senior design project (more information on that later).</p></center>
-    </div>
-    
-    <footer class="footer">
-        <p><span style="padding-left:5%;">Anthony Zaprzalka | 2016</span>
-            <span style="float:right; padding-right:5%;">
-                <a class="footerLinks" href="https://www.linkedin.com/in/anthonyzaprzalka" target="_blank">LinkedIn</a>
-                <a class="footerLinks" href="https://github.com/AZaps" target="_blank">GitHub</a>
-            </span>
-        </p>
-    </footer>
-    
-
-    
-</body>
+    </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

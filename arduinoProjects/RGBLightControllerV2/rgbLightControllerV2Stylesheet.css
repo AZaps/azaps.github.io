@@ -1,0 +1,12 @@
+h1 {
+    text-align: center;
+}
+
+.container-fluid.wrapper {
+    padding-bottom: 100px;
+}
+
+.gifP {
+    width: 50%;
+    float: left;
+}

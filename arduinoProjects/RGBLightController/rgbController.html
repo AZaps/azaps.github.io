@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>RGB Controller</title>
+        <meta name="description" content="RGB Controller">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+            <!-- Main stylesheet -->
+            <link href="../../mainStylesheet.css" rel="stylesheet">
+            <!-- Page specific stlesheet -->
+            <link href="rgbControllerStylesheet.css" rel="stylesheet">
+            
+            <!-- Latest compiled and minified CSS -->
+            <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+            <!-- jQuery library -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+            <!-- Latest compiled JavaScript -->
+            <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="container-fluid wrapper">
+            <nav class="navbar navbar-inverse navbar-custom">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../../index.html">ZApp Development</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="../../index.html">Home</a>
+                        </li>
+                        <li class="dropdown active">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Projects<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="../../swiftProjects/Scribe/swiftScribe.html">Swift Development</a>
+                                    </li>
+                                    <li class="active">
+                                        <a href="../arduinoProjects.html">Arduino Projects</a>
+                                    </li>
+                                    <li>
+                                        <a href="../../cSharpProjects/seniorDesignGraphingApplication/graphingApplication.html">C# Development</a>
+                                    </li>
+                                </ul>
+                        </li>
+                        <li>
+                            <a href="../../Resume/resume.html">Resume</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            
+            <div class="container content-wrapper">
+                <div class="container">
+                    <h1><span style="color:red;">R</span><span style="color:green;">G</span><span style="color:blue;">B</span> Controller</h1>
+                </div>
+                
+                <div class="container">
+                    <p>This project is a cheaper alternative to other ambilight projects and devices out there. With this light set the only issue is the limitation to a single color at a time. Other light strips have the ability to interpret serial signals where this one functions off a digital RGB signal but, for $30 and some change you can't go wrong.</p>
+                </div>
+                <div class="container">
+                    This project requires some steady hands for a bit of soldering and some minor programming knowledge with Arduino. The Processing code was created from looking through various searches and is just needed for screenshotting and determining an average color from that capture. The Arduino and Processing code is available on my <a target="_blank" href="https://github.com/AZaps/RGB-Controller-with-Processing">Github</a>. Both files are in the same repository.
+                </div>
+                <div class="container">
+                    <h2>The Basics</h2>
+                    <h3>What You'll Need</h3>
+                        <div class="container what-You-Need">
+                            <ul>
+                                <li>An Arduino microcontroller. I am using an Arduino Uno for this project but all others should work only some pin change declarations will need to be changed.</li>
+                                <li>The LED light strip. Mine is from <a target="_blank" href="http://www.ikea.com/us/en/catalog/products/50192365/">IKEA</a>.</li>
+                                <li>Arduino IDE and Processing IDE.</li>
+                                <li>Flat-head screwdriver (or something to open up the LED controller) and a soldering iron for connecting jumper wires to the transistors that control the lighting.</li>
+                                <li>Optional: A Dremel or something to drill a small hole.</li>
+                            </ul>
+                        </div>
+                </div>
+                <div class="container">
+                    <img style="width:30%; float:right; padding-top:2em;" src="../../_images/arduinoPictures/RGBController/RGBBoardModified.jpg" alt="Modified RGB Board">
+                    <h2>Modifying the LED Controller</h2>
+                    
+                    <p><span style="font-weight:600;">Disclaimer: Doing this most likely voids any warranty so proceed at your own risk.</span></p>
+                    
+                    <p>Cracking the controller open takes a little bit of force since there are 4 plastic tabs holding it together. I worked on each corner until it opened a bit and stuck another spare screwdriver in to keep it open and add a little bit of leverage.</p>
+                    
+                    <p>Once it is open the soldering can begin! There are 4 pads that need jumper wires soldered to them. 3 of the 4 belong to the RGB transistors towards the bottom of the board. A jumper wire needs to be placed on the left side of each of the resistors above the transistors. The other jumper wire needs to be soldered to the ground terminal of the board which is at the top and the far left pad marked with a minus sign ( - ).</p>
+            
+                    <p>For added convience I drilled two small holes into the top of the controller case so it can be closed with the wires sticking out the top. Normal function of the controller will still be available.</p>
+                    
+                    <p>Modifying the controller this way also give the added beneift of using the already connected power supply as the Arduino cannot and should not power all of the LED's.</p>
+                </div>
+
+                <div class="container">
+                    <h2>Software</h2>
+                    <p>Download both files from the Github link above. Copy the Arduino .ide file to its own folder in your Arduino directory. Copy the Processing .pde file to its own folder within your Processing directory. Both of these folders should be in your C:\Users\YourName\Documents\Arduino or Processing on Windows and Users/yourname/Documents/Arduino or Processing on Mac. </p>
+
+                    <p>There are a few things that you need to determine before running any of the software. For the jumper wire connections I am using the PWM pins 11 for red, 9 for green, and 10 for blue. This can be changed accordingly based on your microcontroller model, just make sure they are PWM pins. For specifics, lines 16-18 <br><br>
+                        <code>const int redLight = 11;<br> const int greenLight = 9;<br> const int blueLight = 10;</code>
+                    </p>
+                    
+                    <p>Within the Processing code there are a few things that need to be adjusted depending on your setup.</p>
+                    
+                    <h3>Communication (COM) Port</h3>
+                    <p>This is dependent on which USB port your Arduino controller is plugged into. This can easily be found by going to Tools -> Port within the Arduino program IDE. From there it should list the port to communicate with the device. To change the communication port is on line 12.</p>
+                    <code>String comPort = "COM1";</code>
+                    
+                    <h3>Resolution</h3>
+                    <p>This should be pretty straightforward, change the width and height values to match your monitors resolution. Changing the resolution is found on lines 15 and 16.</p>
+                    <code>int width = 2560;<br>int height = 1440;</code>
+
+                    <h3>Sample Divisor</h3>
+                    <p>Changing this number will affect the accuracy and speed of the program. Increasing will be faster but less accurate. Decreasing the number will be more accurate but will be slower. I found leaving the divisor at 8 seemed suitable but experimentation with the value is always available. This is found on line 19.</p>
+                    <code>int pixelDivisor = 8;</code>
+                </div>
+                
+                <div class="container">
+                    <h2>Demo</h2>
+                    <p style="width:50%; float:left;">This is a simple demo of the lights where a single color is being detected and outputted from the computer. Unfortunately, one of the transistors died and the color output wasn’t as accurate anymore. There seemed to be a decrease in blue output. As it stood, before the untimely demise, I would call this project complete given the materials on hand. Further improvements could always be made to the code base but at the moment it works well. </p>
+                    <div style='position:relative;padding-bottom:calc(100% / 1.78)'><iframe src='https://gfycat.com/ifr/CanineBouncyItaliangreyhound' frameborder='0' scrolling='no' width='50%' height='50%' style='position:absolute;right:0;' allowfullscreen></iframe></div>
+                </div>
+            </div>
+        
+            <footer class="footer">
+                <p style="float:left; padding-left: 5%;">
+                    Anthony Zaprzalka | 2016
+                </p>
+                
+                <p style="float:right; padding-right: 5%;">
+                    <a class="footerLinks" href="https://www.linkedin.com/in/anthonyzaprzalka" target="_blank">LinkedIn</a>
+                    <a class="footerLinks" href="https://github.com/AZaps" target="_blank">GitHub</a>
+                </p>
+            </footer>
+        </div>
+    </body>
+</html>

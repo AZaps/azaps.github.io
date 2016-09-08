@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Graphing Companion</title>
+        <meta name="description" content="Graphing Companion">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+            <!-- Main stylesheet -->
+            <link href="../../mainStylesheet.css" rel="stylesheet">
+            <!-- Page specific stlesheet -->
+            <link href="graphingApplicationStylesheet.css" rel="stylesheet">
+            
+            <!-- Latest compiled and minified CSS -->
+            <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+            <!-- jQuery library -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+            <!-- Latest compiled JavaScript -->
+            <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="container-fluid wrapper">
+            <nav class="navbar navbar-inverse navbar-custom">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../../index.html">ZApp Development</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="../../index.html">Home</a>
+                        </li>
+                        <li class="dropdown active">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Projects<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="../../swiftProjects/Scribe/swiftScribe.html">Swift Development</a>
+                                    </li>
+                                    <li>
+                                        <a href="../../arduinoProjects/arduinoProjects.html">Arduino Projects</a>
+                                    </li>
+                                    <li class="active">
+                                        <a href="../seniorDesignGraphingApplication/graphingApplication.html">C# Development</a>
+                                    </li>
+                                </ul>
+                        </li>
+                        <li>
+                            <a href="../../Resume/resume.html">Resume</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+                
+            <div class="container mainHeader">
+                <h1>Graphing Application</h1>
+                <h5>Senior Design Companion Application</h5>
+            </div>
+            
+            <div class="container">
+                <p>This application was created to be used as an extra tool with our Senior Design project, Household Air Quality Sensor. I took this as a learning experience in order to familiarize myself a little with C# and SQL databases. Hover over each section to learn more about the element.</p>
+            </div>
+            
+            <div class="container-fluid picture" style="font-size:0px; margin-bottom:15%;">
+                <img id="graphingApplicationScreenshot" style="z-index = 1;" src="../../_images/graphingApplication/graphingScreen2KNoOverlay.png" alt="Screenshot of Application">
+                
+                <!-- Overlay on the graph -->
+                <div id="pictureBox1">
+                    <p class="boxDescription">Here is shown the data for carbon monoxide, temperature, and humidity over the course of a week. The legend in the bottom left shows which color belongs to the element it is describing. The dates are shown along the x-axis and the numerical data for the items are along the y-axis. All the data is combined in one but is relative to one another. The temperature is in Fahrenheit, the humidity as a percent, and the gases are in parts per million. Currently, the temperature is around 60 to 70 degrees, the humidity around 20 to 30 percent, and the carbon monoxide concentration around 10 parts per million. This is also random data to show extreme cases.</p>
+                </div>
+                <div id="bottomPicHolder">
+                    <div id="pictureBox2">
+                        <p class="boxDescription">Clicking on the calendar icon will bring up a calendar where a start and end date can be selected.</p>
+                    </div>
+                    <div id="pictureBox3">
+                        <p class="boxDescription">Select items here and click the graph button to display the information above on the graph.</p>
+                    </div>
+                    <div id="pictureBox4">
+                        <p class="boxDescription">Information is displayed here such as: amount of entries per gas, if there is data previously saved or how much is saved.</p>
+                    </div>
+                    <div id="pictureBox5">
+                        <p class="boxDescription">The buttons here will display the total amount of data in the information section, delete all entries, and loading in new data from an SD card with a loading bar to give a time estimate.</p>
+                    </div>
+                </div> 
+            </div>
+            
+            <script src="graphingApplicationScript.js"></script>
+            
+            <footer class="footer">
+                <p style="float:left; padding-left: 5%;">
+                    Anthony Zaprzalka | 2016
+                </p>
+                
+                <p style="float:right; padding-right: 5%;">
+                    <a class="footerLinks" href="https://www.linkedin.com/in/anthonyzaprzalka" target="_blank">LinkedIn</a>
+                    <a class="footerLinks" href="https://github.com/AZaps" target="_blank">GitHub</a>
+                </p>
+            </footer>
+        </div>
+    </body>
+</html>

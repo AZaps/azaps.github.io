@@ -1,0 +1,56 @@
+.container.mainHeader {
+    text-align: center;
+}
+
+.container-fluid.picture {
+    position: relative;
+    text-align: center;
+    padding-bottom: 10em;
+}
+
+.container-fluid.picture img {
+    position: relative;
+    max-width: 85%;
+    height: auto;
+}
+
+.container-fluid.picture div {
+    /*background-color: white;
+    opacity: 0;*/
+    background: rgba(0,0,0,0);
+}
+
+.container-fluid.picture div:hover {
+    /*background-color: #515151;
+    opacity: 0.75;*/
+    background: rgba(51,51,51,0.75);
+}
+#bottomPicHolder div:hover p {
+    visibility: visible;
+}
+
+#pictureBox1:hover p {
+    visibility: visible;
+}
+
+#bottomPicHolder {
+    background: rgba(0,0,0,0);
+}
+
+#bottomPicHolder:hover {
+    background: rgba(0,0,0,0);
+}
+
+#bottomPicHolder div:hover p {
+    visibility: visible;
+}
+
+.boxDescription {
+    font-size: 14px;;
+    position: relative;
+    top: 35%;
+    margin-left: 10%;
+    margin-right: 10%;
+    color: rgba(255,255,255,1);
+    visibility: hidden;
+}
