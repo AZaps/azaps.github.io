@@ -1,226 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Resume</title>
-        <meta name="description" content="Resume">
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-            <!-- Main stylesheet -->
-            <link href="../mainStylesheet.css" rel="stylesheet">
-            <!-- Page specific stlesheet -->
-            <link href="resumeStylesheet.css" rel="stylesheet">
-            
-            <!-- Latest compiled and minified CSS -->
-            <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-            <!-- jQuery library -->
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-            <!-- Latest compiled JavaScript -->
-            <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    </head>
-    <body>
-        <div class="container-fluid wrapper">
-            <nav class="navbar navbar-inverse navbar-custom">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="../index.html">ZApp Development</a>
-                </div>
-                <div class="collapse navbar-collapse" id="myNavbar">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li>
-                            <a href="../index.html">Home</a>
-                        </li>
-                        <li class="dropdown">
-                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Projects<span class="caret"></span></a>
-                                <ul class="dropdown-menu">
-                                    <li>
-                                        <a href="../swiftProjects/Scribe/swiftScribe.html">Swift Development</a>
-                                    </li>
-                                    <li>
-                                        <a href="../arduinoProjects/arduinoProjects.html">Arduino Projects</a>
-                                    </li>
-                                    <li>
-                                        <a href="../cSharpProjects/seniorDesignGraphingApplication/graphingApplication.html">C# Development</a>
-                                    </li>
-                                    <li>
-                                        <a href="../EDX52/eDX52.html">Elite Dangerous X52 Pro</a>
-                                    </li>
-                                </ul>
-                        </li>
-                        <li class="active">
-                            <a href="resume.html">Resume</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-            
-            <div class="container-fluid customContainer">
-                <h1>Anthony Zaprzalka</h1>
-                <h4>azmail@comcast.net</h4>
-                <!-- Table for bulk of resume -->
-                <table class="table borderless">
-                    <tbody>
-                        <!-- Summary -->
-                        <tr>
-                            <td class="sidebar">Summary</td>
-                            <td>Flexible, adaptable, and motivated electrical engineer striving to provide reliable and effective solutions in the electrical and computer engineering field. Skilled in building communication channels between various teams to describe engineering focused decisions and providing project outlooks.</td>
-                        </tr>
-                        <!-- Education -->
-                        <tr>
-                            <td class="sidebar">Education</td>
-                            <td><span style="font-weight:500;">University of Illinois at Chicago</span>
-                                <br>Bachelor of Science in Electrical Engineering</td>
-                        </tr>
-                        <!-- Skills -->
-                        <tr>
-                            <td class="sidebar">Skills</td>
-                            <td>C, C#, Swift, Assembly, Arduino, and PIC. Multisim and LTSpice circuit simulators. Oscilloscopes, multimeters, voltage and function generators. Circuit design, analysis and construction. Working knowledge in Autodesk Inventor, Office, iWork, and German (elementary).</td>
-                        </tr>
-                        <!-- Personal Projects -->
-                        <tr>
-                            <td class="sidebar">Personal Projects</td>
-                            <!-- Website Development -->
-                            <td>
-                                <span class="listHeaders">Website Development</span>
-                                <br><span style="font-style:italic;">HTML, CSS, Bootstrap</span>
-                                <ul>
-                                    <li>Self-taught and designed</li>
-                                    <li>Created for presenting personal projects and providing links to source code</li>
-                                    </ul>
-                            <!-- App Development -->
-                                <span class="listHeaders">App Development</span>
-                                <br><span style="font-style:italic;">Swift (Object-Oriented)</span>
-                                <ul>
-                                    <li>Designed and created <span style="font-style:italic;">Scribe</span> (In-progress), a Role-Playing game style reminder app</li>
-                                    <li>Uses Core Data, follows a MVC pattern, and animation usage</li>
-                                    </ul>
-                            <!-- Hardware and Software -->
-                                <span class="listHeaders">Hardware and Software</span>
-                                <br><span style="font-style:italic;">Arduino (C)</span>
-                                <ul>
-                                    <li>Modified a RGB controller to work with an Arduino controller</li>
-                                    <li>Saving sensor data to a SD card to function with a Windows companion application</li>
-                                </ul>
-                            </td>
-                        </tr>
-                        <!-- Senior Design Project -->
-                        <tr>
-                            <td class="sidebar">Senior Design Project</td>
-                            <td>
-                                <span class="listHeaders">Household Air Quality Sensor</span>
-                                <span class="listDates">August 2015 - April 2016</span>
-                                <br>
-                                    <span class="listHeaders" style="font-style:italic;">Awarded 1st Place and Khounsary Award for Social and/or Environmental Advancement</span>
-                                <ul>
-                                    <li>Implements multiple gas sensors that most homes do not account for, provides extra safety</li>
-                                    <li>Coded underlying structure, SD data saving, sensor reading, framework for interaction, C# companion application, wiring schematic, designed and 3D printed CAD files</li>
-                                    <li>Lead team in organizing workflow and optimizing the design process</li>
-                                </ul>
-                            </td>
-                        </tr>
-                        <!-- Experience -->
-                        <tr>
-                            <td class="sidebar">Experience</td>
-                            <td>
-                                <span class="listHeaders">CoreCentric Solutions Inc,</span>
-                                <span clss="font-style:italic;">Carol Stream, Illinois</span>
-                                <span class="listDates">2018 - Present</span>
-                                <br><span style="font-style: italic;">Product Engineer Electrical</span>
-                                    <ul>
-                                        <li>Developed and launched a repair returns process for consumer entertainment racing wheels totaling over 15 different products.
-                                            <ul>
-                                                <li>Designed a new test process flow with specific repair procedures depending on product failure to reduce excessive component replacement.</li>
-                                                <li>Main communication contact with customer handling new products, engineering requests and questions, and project management.</li>
-                                                <li>Designed layout and flow of repair cell while managing and training a repair technician.</li>
-                                            </ul>
-                                        </li>
-                                        <li>Multi project focus in launching new products, new product analysis, and production line technical support.
-                                            <ul>
-                                                <li>Main area of focus was final stage review and launching of appliance control boards.</li>
-                                                <li>Additional areas in automotive products requiring new repair procedures to be developed with the use of a BGA rework machine.</li>
-                                            </ul>
-                                        </li>
-                                        <li>Lead training programs for new Engineering Technicians to be quickly acclimated to the team and provide guidance for best approach analysis guidelines.</li>
-                                        <li>Lead project management scheduling for new product launches using reactive Excel spreadsheets and bridging communication between Engineering, Planning, and Production management teams.
-                                            <ul>
-                                                <li>Coordinate schedules to deliver projects on time and in an efficient manner.</li>
-                                                <li>Leading weekly review meetings to review project statuses and re-adjust dependent on priorities and conflicts.</li>
-                                            </ul>
-                                        </li>
-                                        <li>Oversee a group of engineers in our extended India office.
-                                            <ul>
-                                                <li>Visited in person to demonstrate differences between project flows and provide examples to bridge knowledge gap between teams.</li>
-                                                <li>Provided guidance to the team to properly formulate and present ideas to upper management.</li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                
-                                <span class="listHeaders">CoreCentric Solutions Inc,</span>
-                                <span clss="font-style:italic;">Carol Stream, Illinois</span>
-                                <span class="listDates">November 2016 - 2018</span>
-                                <br><span style="font-style: italic;">Electrical Engineering Technician</span>
-                                    <ul>
-                                        <li>Provide solutions in reverse engineering and remanufacturing consumer appliance control boards.
-                                            <ul>
-                                                <li>Creation of test processes to assure a fully functional control board before sale.</li>
-                                                <li>Reverse engineering of damaged control boards to develop repair processes.</li>
-                                                <li>Provide technical solutions and modifications arising from production by implementing test process updates or explaining new control behavior for easy comprehension.</li>
-                                                <li>Development of repair processes, component upgrades, or improvements to appliance controls.</li>
-                                            </ul>
-                                        </li>
-                                        <li>Created a custom software application to help improve report logging by 4X.</li>
-                                        <li>Implemented a Kanban inventory design for common engineering components. Including a visual guide for identifying components resulting in a 6X reduction in acquiring parts.</li>
-                                    </ul>
-                                
-                                <span class="listHeaders">Palatine Public Works, </span>
-                                <span style="font-style:italic;">Palatine,Illinois</span>
-                                <span class="listDates">May - August 2014</span>
-                                <br><span style="font-style:italic;">Summer Laborer</span>
-                                    <ul>
-                                        <li>Worked with a team to quickly remove and restore trees</li>
-                                        <li>Communicated with homeowners about current status</li>
-                                    </ul>
-                                
-                                <span class="listHeaders">Palatine Township Food Pantry, </span>
-                                <span style="font-style:italic;">Palatine, Illinois</span>
-                                <span class="listDates">January 2009 - April 2012</span>
-                                <br><span style="font-style:italic;">Volunteer</span>
-                                    <ul>
-                                        <li>Assisted customers with the correct selection of items</li>
-                                        <li>Maintained a clean and organized workspace</li>
-                                    </ul>
-                            </td>
-                        </tr>
-                        <!-- Activities -->
-                        <tr>
-                            <td class="sidebar">Activities</td>
-                            <td>
-                                National Honor Society
-                                <br>IEEE Student Member
-                            </td>
-                        </tr>
-                        <!-- Interests -->
-                        <tr>
-                            <td class="sidebar">Interests</td>
-                            <td>Working and coding with iOS devices, repairing computers, building and creating things, astronomy, scientific theories and developments, NHRA, biking, discovering new music, gaming, and learning new concepts.</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div> 
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Resume - Anthony Zaprzalka</title>
+  <meta name="description" content="Resume of Anthony Zaprzalka - Embedded Firmware Engineer">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>Z</text></svg>">
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
 
-            <footer class="footer">
-                <p style="float:left; padding-left: 5%;">
-                    Anthony Zaprzalka | 2018
-                </p>
-                
-                <p style="float:right; padding-right: 5%;">
-                    <a class="footerLinks" href="https://www.linkedin.com/in/anthonyzaprzalka" target="_blank">LinkedIn</a>
-                    <a class="footerLinks" href="https://github.com/AZaps" target="_blank">GitHub</a>
-                </p>
-            </footer>
+  <nav class="site-nav" aria-label="Main navigation">
+    <a href="/index.html" class="site-nav__brand">ZApp Development</a>
+    <input type="checkbox" id="nav-toggle" class="site-nav__toggle" aria-label="Toggle navigation">
+    <label for="nav-toggle" class="site-nav__hamburger" aria-hidden="true">
+      <span></span><span></span><span></span>
+    </label>
+    <ul class="site-nav__menu">
+      <li><a href="/index.html">Home</a></li>
+      <li class="site-nav__dropdown">
+        <a href="#" class="site-nav__dropdown-trigger">Projects</a>
+        <ul class="site-nav__dropdown-menu">
+          <li><a href="/swiftProjects/Scribe/swiftScribe.html">Swift Development</a></li>
+          <li><a href="/arduinoProjects/arduinoProjects.html">Arduino Projects</a></li>
+          <li><a href="/cSharpProjects/seniorDesignGraphingApplication/graphingApplication.html">C# Development</a></li>
+          <li><a href="/EDX52/eDX52.html">Elite Dangerous X52 Pro</a></li>
+        </ul>
+      </li>
+      <li><a href="/Resume/resume.html" aria-current="page">Resume</a></li>
+    </ul>
+  </nav>
+
+  <main id="main">
+    <div class="resume-header">
+      <h1>Anthony Zaprzalka</h1>
+      <p class="resume-contact">
+        <!-- TODO: Update contact info -->
+        <a href="https://www.linkedin.com/in/anthonyzaprzalka" target="_blank" rel="noopener">LinkedIn</a> |
+        <a href="https://github.com/AZaps" target="_blank" rel="noopener">GitHub</a>
+      </p>
+    </div>
+
+    <div class="container">
+
+      <section class="resume-section">
+        <h2>Summary</h2>
+        <div>
+          <p>Embedded firmware engineer with experience across the full hardware-software stack. Skilled in Rust, Python, and C for microcontroller and IoT platforms. Background in electrical engineering with hands-on experience in product development, manufacturing test systems, and cross-team technical leadership.</p>
         </div>
-    </body>
+      </section>
+
+      <section class="resume-section">
+        <h2>Skills</h2>
+        <div>
+          <p><strong>Languages:</strong> Rust, Python, C, C#, Swift, Assembly</p>
+          <p><strong>Embedded:</strong> ESP32, STM32, Arduino, PIC — bare-metal and RTOS development</p>
+          <p><strong>Tools:</strong> Git, Jenkins CI/CD, PyInstaller, SQLite, Cargo/xtask build systems</p>
+          <p><strong>Hardware:</strong> Circuit design and analysis, oscilloscopes, multimeters, soldering, 3D printing (Autodesk Inventor)</p>
+          <!-- TODO: Update/refine skills list -->
+        </div>
+      </section>
+
+      <section class="resume-section">
+        <h2>Experience</h2>
+        <div>
+          <!-- TODO: Add current role details -->
+          <article class="resume-entry">
+            <div class="resume-entry-header">
+              <span class="resume-dates"><!-- TODO: dates --></span>
+            </div>
+            <p class="resume-title">Embedded Firmware Engineer</p>
+            <ul>
+              <li>Develop firmware in Rust for ESP32-S3 based cooking appliances (grills, displays, wireless probes)</li>
+              <li>Build and maintain manufacturing test programs (Python/PyInstaller) for device provisioning and validation</li>
+              <li>Design CI/CD pipelines (Jenkins) for multi-platform firmware and tooling builds</li>
+              <li>Maintain hardware abstraction layers across multiple product lines</li>
+              <!-- TODO: Expand with specific achievements -->
+            </ul>
+          </article>
+
+          <article class="resume-entry">
+            <div class="resume-entry-header">
+              <h3>CoreCentric Solutions Inc.</h3>
+              <span class="resume-dates">2018 - <!-- TODO: end date --></span>
+            </div>
+            <p class="resume-title">Product Engineer Electrical</p>
+            <ul>
+              <li>Developed and launched repair returns process for consumer entertainment racing wheels across 15+ products</li>
+              <li>Designed test process flows with targeted repair procedures to reduce excessive component replacement</li>
+              <li>Led training programs for new Engineering Technicians</li>
+              <li>Managed project scheduling for new product launches, bridging communication between Engineering, Planning, and Production teams</li>
+              <li>Oversaw a group of engineers in an extended India office, including an in-person visit to align workflows</li>
+            </ul>
+          </article>
+
+          <article class="resume-entry">
+            <div class="resume-entry-header">
+              <h3>CoreCentric Solutions Inc.</h3>
+              <span class="resume-dates">Nov 2016 - 2018</span>
+            </div>
+            <p class="resume-title">Electrical Engineering Technician</p>
+            <ul>
+              <li>Reverse engineered and developed repair processes for consumer appliance control boards</li>
+              <li>Created test processes to assure fully functional control boards before sale</li>
+              <li>Built custom software application to improve report logging by 4x</li>
+              <li>Implemented Kanban inventory system for common engineering components, reducing parts acquisition time by 6x</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="resume-section">
+        <h2>Education</h2>
+        <div>
+          <article class="resume-entry">
+            <div class="resume-entry-header">
+              <h3>University of Illinois at Chicago</h3>
+            </div>
+            <p>Bachelor of Science in Electrical Engineering</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="resume-section">
+        <h2>Projects</h2>
+        <div>
+          <article class="resume-entry">
+            <div class="resume-entry-header">
+              <h3>Household Air Quality Sensor</h3>
+              <span class="resume-dates">Aug 2015 - Apr 2016</span>
+            </div>
+            <p class="resume-title">Senior Design Project — 1st Place, Khounsary Award for Social/Environmental Advancement</p>
+            <ul>
+              <li>Designed multi-gas concentration sensor with touchscreen UI for homes and offices</li>
+              <li>Built firmware (Arduino C), SD data logging, wiring schematics, 3D-printed enclosure, and C# companion graphing application</li>
+              <li>Led team workflow and design process optimization</li>
+            </ul>
+          </article>
+
+          <article class="resume-entry">
+            <div class="resume-entry-header">
+              <h3>Personal Portfolio &amp; Open Source</h3>
+            </div>
+            <ul>
+              <li>This website — vanilla HTML/CSS/JS, zero dependencies, hosted on GitHub Pages</li>
+              <li><a href="https://github.com/AZaps/Scribe-Swift" target="_blank" rel="noopener">Scribe</a> — iOS reminder app with RPG-style progression (Swift)</li>
+              <li><a href="https://github.com/AZaps/Elite-Dangerous-X52-MFD" target="_blank" rel="noopener">ED X52 Pro</a> — Elite Dangerous journal integration for X52 Pro joystick MFD</li>
+              <li>DIY Adalight clone — Arduino RGB LED ambient lighting with Processing</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="resume-section">
+        <h2>Interests</h2>
+        <div>
+          <p>Embedded systems, open-source firmware, IoT, repairing and building electronics, astronomy, gaming, biking, and discovering new music.</p>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <span>Anthony Zaprzalka | 2026</span>
+    <span>
+      <a href="https://www.linkedin.com/in/anthonyzaprzalka" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/AZaps" target="_blank" rel="noopener">GitHub</a>
+    </span>
+  </footer>
+</body>
 </html>

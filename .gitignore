@@ -1,5 +1,4 @@
-# OS generated files #
-######################
+# OS generated files
 .DS_Store
 .DS_Store?
 ._*
@@ -7,3 +6,13 @@
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+# Local dev
+serve.sh
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
