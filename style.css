@@ -329,6 +329,7 @@ pre code { display: block; padding: var(--spacing-sm); overflow-x: auto; }
   align-items: baseline;
 }
 .resume-entry-header h3 { font-size: 1rem; margin: 0; }
+.resume-location { font-weight: normal; color: var(--color-text-light); font-size: 0.875rem; }
 .resume-dates {
   font-style: italic;
   color: var(--color-text-light);
